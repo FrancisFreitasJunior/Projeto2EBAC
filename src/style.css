@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.logo-shibui img {
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+.logo-shibui {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+html {
+    background-image: url(./image/background-sushi.jpg);
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerMaster {
+    height: 95%;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(224, 223, 217, 0.8);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.containerInputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.containerInputs input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #131c20;
+    padding: 12px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.containerInputs input:nth-child(1) {
+    grid-column: span 3;
+}
+
+.containerInputs input:nth-child(3), .containerInputs input:nth-child(4) {
+    text-align: center;
+}
+
+.containerButtons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerButtons button {
+    height: 48px;
+    width: 150px;
+    margin: 8px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #28A745;
+    color: white;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.containerButtons button:hover{
+    cursor: pointer;
+    background-color: #1E7E34;
+}
