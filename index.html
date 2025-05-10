@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=delete" />
     <title>ShibuiSushi</title>
 </head>
 
@@ -13,21 +17,23 @@
         <header>
             <div class="logo-shibui">
                 <img src="./src/image/shibui-sushi-logo.png" alt="Logo Shibui Sushi">
+                
             </div>
-            <form>
+            <h3 class="titulo-app">Agende o horário preenchendo os campos abaixo</h3>
+            <form id="form-restaurante">
                 <div class="containerInputs">
-                    <input type="text">
-                    <input type="number">
-                    <input type="date">
-                    <input type="time">
+                    <input type="text" id="nome-cliente" placeholder="Nome" required>
+                    <input type="number" id="telefone-cliente" placeholder="Telefone" required>
+                    <input type="date" id="data-agendamento" required>
+                    <input type="time" id="horario-agendamento" required>
                 </div>
                 <div class="containerButtons">
-                    <button id="btn-cadastrar">Cadastrar</button>
+                    <button type="submit" id="btn-cadastrar">Cadastrar</button>
                 </div>
             </form>
         </header>
         <section>
-            <table border="1">
+            <table>
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -38,46 +44,23 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!--
                     <tr>
                         <td>João Silva</td>
                         <td>(11) 98765-4321</td>
                         <td>2025-03-03</td>
                         <td>14:30</td>
                         <td>
-                            <button>Editar</button>
-                            <button>Excluir</button>
+                            <button class="button-tabela"><span class="material-symbols-outlined">delete</span></button>
                         </td>
                     </tr>
-                    <tr>
-                        <td>Maria Oliveira</td>
-                        <td>(21) 91234-5678</td>
-                        <td>2025-03-04</td>
-                        <td>09:15</td>
-                        <td>
-                            <button>Editar</button>
-                            <button>Excluir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lucas Santos</td>
-                        <td>(31) 99876-5432</td>
-                        <td>2025-03-05</td>
-                        <td>18:45</td>
-                        <td>
-                            <button>Editar</button>
-                            <button>Excluir</button>
-                        </td>
-                    </tr>
+                    -->
                 </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="5" style="text-align: center;">Total de Reservas: 3</td>
-                    </tr>
-                </tfoot>
             </table>
             </table>
         </section>
     </div>
+    <script src="./src/script.js"></script>
 </body>
 
 </html>

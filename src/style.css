@@ -1,4 +1,5 @@
 * {
+    font-family: "Readex Pro", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -32,6 +33,11 @@ input[type="number"] {
     justify-content: center;
 }
 
+.titulo-app {
+    text-align: center;
+    padding: 12px;
+}
+
 html {
     background-image: url(./image/background-sushi.jpg);
     background-size: cover;
@@ -42,14 +48,14 @@ html {
 }
 
 .containerMaster {
-    height: 95%;
+    height: auto;
     box-sizing: border-box;
     width: 100%;
     max-width: 800px;
-    background-color: rgba(224, 223, 217, 0.8);
-    padding: 12px;
+    background-color: #e3ddd4;
+    padding: 16px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
     margin: 20px;
 }
 
@@ -99,7 +105,7 @@ form {
     margin: 8px;
     border-radius: 8px;
     border: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     background-color: #28A745;
     color: white;
     font-size: 16px;
@@ -109,4 +115,58 @@ form {
 .containerButtons button:hover{
     cursor: pointer;
     background-color: #1E7E34;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+}
+
+table thead th {
+    padding: 8px;
+    border-bottom: 2px solid black;
+}
+
+table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+table tbody td {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+table tbody td:nth-child(1) {
+    text-align: left;
+}
+
+tbody {
+    display: block;
+    max-height: 400px; /* Ajuste para não ultrapassar o section */
+    overflow-y: auto;
+}
+
+tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Impede desalinhamento das colunas */
+}
+
+.button-tabela {
+    height: 48px;
+    width: 48px;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    background-color: #e74c3c;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.button-tabela:hover {
+    background-color: #c0392b;
+    cursor: pointer;
 }
